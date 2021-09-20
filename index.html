@@ -152,6 +152,204 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-项目准备报告-md" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/09/20/%E9%A1%B9%E7%9B%AE%E5%87%86%E5%A4%87%E6%8A%A5%E5%91%8A-md/">项目准备报告.md</a>
+    </h1>
+  
+
+        
+        <a href="/2021/09/20/%E9%A1%B9%E7%9B%AE%E5%87%86%E5%A4%87%E6%8A%A5%E5%91%8A-md/" class="archive-article-date">
+  	<time datetime="2021-09-20T08:43:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-方案所需的基本硬件"><a href="#1-方案所需的基本硬件" class="headerlink" title="1.方案所需的基本硬件"></a>1.方案所需的基本硬件</h1><ul>
+<li><p>树莓派4B开发板一块</p>
+</li>
+<li><p>设配5V3A的充电器/电源，或者转接口一个</p>
+</li>
+<li><p>tf卡一张</p>
+</li>
+<li><p>散热片和风扇</p>
+</li>
+<li><p>支持相应的板子的摄像头一个</p>
+</li>
+</ul>
+<h2 id="1-树莓派4b开发板选择"><a href="#1-树莓派4b开发板选择" class="headerlink" title="1.树莓派4b开发板选择"></a>1.树莓派4b开发板选择</h2><h3 id="1-开发板实物图片"><a href="#1-开发板实物图片" class="headerlink" title="1.开发板实物图片"></a>1.开发板实物图片</h3><p>  <img src="https://gd4.alicdn.com/imgextra/i4/143813255/O1CN017WQLQ61ZupjXeCwIE_!!143813255.jpg"></p>
+<h3 id="2-淘宝相应链接"><a href="#2-淘宝相应链接" class="headerlink" title="2.淘宝相应链接"></a>2.淘宝相应链接</h3><p><a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?id=597115872531&ali_trackid=2:mm_124190590_30248727_111528700405:1632117228_228_2127987918&union_lens=lensId:OPT@1632117223@0b16ebc8_07db_17c01c46f1a_7431@01;recoveryid:201_11.24.52.6_5108119_1632117203445;prepvid:201_11.1.99.27_5105896_1632117222747&spm=a2e1u.19484427.29996460.1&pvid=100_11.30.126.142_71171_9851632117223031577&scm=null&bxsign=tbkPc+M8V6qhFTU8IgcIRx7rJdyhaGuGt4rHr+yO+jRAO8No+BBLEzXeWccoWQ12HXnau39zjca/nFUA5UCNl5vyrHFGFcOUAwm2zbMpCDtwf8=">树莓派4b链接</a></p>
+<p><img src="https://gd2.alicdn.com/imgextra/i4/143813255/O1CN01ODXLdM1ZupqvQSHcZ_!!143813255.jpg_400x400.jpg"></p>
+<p><strong>选择树莓派4G的乌金甲套餐，自带风扇散热，tf卡已刷好树莓派官方Raspbian系统</strong></p>
+<p>且附有树莓派全套开发教程可供学习与参考：</p>
+<p><img src="https://img.alicdn.com/imgextra/i4/143813255/O1CN01p09O4a1ZupqlcaTAl_!!143813255.jpg"></p>
+<h2 id="2-摄像头选择"><a href="#2-摄像头选择" class="headerlink" title="2.摄像头选择"></a>2.摄像头选择</h2><p>具体地址：<a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.3.4b067484IiGCFO&id=556207629908">点这里</a></p>
+<p>图片:</p>
+<p><img src="https://gd4.alicdn.com/imgextra/i4/143813255/TB2z7W.bKUkyKJjSsphXXbdaVXa_!!143813255.jpg"></p>
+<p>优点：支持树莓派官方的<strong>raspi-config</strong>使用摄像头，也支持picamera开发</p>
+<p>缺点：使用sci排线，排线短，且容易破损</p>
+<h1 id="2-程序样例"><a href="#2-程序样例" class="headerlink" title="2.程序样例"></a>2.程序样例</h1><h2 id="1-使用raspi-config："><a href="#1-使用raspi-config：" class="headerlink" title="1.使用raspi-config："></a>1.使用raspi-config：</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">raspistill：获取静态图片的命令</span><br><span class="line">raspivid：获取视频信息的命令</span><br><span class="line">1.1秒钟（时间单位为毫秒）延迟后拍摄一张照片，并命名为image.jpg:</span><br><span class="line">raspistill -t 1000 -o image.jpg</span><br><span class="line">2. 拍摄一张自定义大小和帧率的照片</span><br><span class="line">raspistill -t 1000 -o image.jpg -w 640 -h 480 -q 5</span><br><span class="line">3.设置浮雕风格图像特效</span><br><span class="line">raspistill -t 1000 -o image.jpg -ifx emboss</span><br><span class="line">4.获取一张照片并发送至标准输出设备（如显示器）</span><br><span class="line">raspistill -t 1000 -o</span><br><span class="line">1. 拍摄一段视频：默认是视频长度为5s，分辨率为1920*1080，帧率：17</span><br><span class="line">raspivid -o myvideo.h264</span><br><span class="line">2. 拍摄一段视频：分辨率为640*480 时间为10s</span><br><span class="line">raspivid -o myvideo.h264  -t 10000 -w 640 -h 480</span><br><span class="line">由于aspivid输出的是一段未压缩的H.264视频流。为了能让我们普通的视频播放器播放需要安装gpac包。</span><br><span class="line">apt-get install -y gpac</span><br><span class="line">然后利用gpac包中的MP4Box应用将H.264格式的视频流转换为每秒10帧的MP4格式的视频</span><br><span class="line">MP4Box -fps 10 -add myvideo.h264 myvideo.mp4</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-使用omxplayer播放视频"><a href="#2-使用omxplayer播放视频" class="headerlink" title="2.使用omxplayer播放视频"></a>2.使用omxplayer播放视频</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">omxplayer myvideo.mp4</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-使用picamera实现摄像头数据的传输"><a href="#3-使用picamera实现摄像头数据的传输" class="headerlink" title="3.使用picamera实现摄像头数据的传输"></a>3.使用picamera实现摄像头数据的传输</h2><p><strong>基于GPIO和picamera，和tensorflow实现物体的追踪</strong></p>
+<p>具体项目给出了GitHub详细地址：</p>
+<p>地址1：Mingrui Yu大佬的项目<a target="_blank" rel="noopener" href="https://github.com/Mingrui-Yu/RaspberryCar">点这里</a></p>
+<p>地址2：Timthony大佬的项目<a target="_blank" rel="noopener" href="https://github.com/Timthony/self_drive">点这里</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br></pre></td><td class="code"><pre><span class="line">Skip to content</span><br><span class="line">Search <span class="keyword">or</span> jump to…</span><br><span class="line">Pull requests</span><br><span class="line">Issues</span><br><span class="line">Marketplace</span><br><span class="line">Explore</span><br><span class="line"> </span><br><span class="line"><span class="meta">@shier1 </span></span><br><span class="line">Mingrui-Yu</span><br><span class="line">/</span><br><span class="line">RaspberryCar</span><br><span class="line">Public</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">10760</span></span><br><span class="line">Code</span><br><span class="line">Issues</span><br><span class="line">Pull requests</span><br><span class="line">Actions</span><br><span class="line">Projects</span><br><span class="line">Wiki</span><br><span class="line">Security</span><br><span class="line">Insights</span><br><span class="line">RaspberryCar/PythonCode/main_object_detection.py /</span><br><span class="line"><span class="meta">@Mingrui-Yu</span></span><br><span class="line">Mingrui-Yu 优化tennis tracking</span><br><span class="line">Latest commit 7aa9357 on <span class="number">29</span> Oct <span class="number">2019</span></span><br><span class="line"> History</span><br><span class="line"> <span class="number">1</span> contributor</span><br><span class="line"><span class="number">117</span> lines (<span class="number">92</span> sloc)  <span class="number">4.6</span> KB</span><br><span class="line">  </span><br><span class="line"><span class="keyword">import</span> RPi.GPIO <span class="keyword">as</span> GPIO</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> picamera.array <span class="keyword">import</span> PiRGBArray</span><br><span class="line"><span class="keyword">from</span> picamera <span class="keyword">import</span> PiCamera</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">from</span> object_detection.utils <span class="keyword">import</span> label_map_util</span><br><span class="line"><span class="keyword">from</span> object_detection.utils <span class="keyword">import</span> visualization_utils <span class="keyword">as</span> vis_utils</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> move <span class="keyword">import</span> CarMove</span><br><span class="line"><span class="keyword">from</span> ultrasound <span class="keyword">import</span> CarUltrasound</span><br><span class="line"><span class="keyword">from</span> infrared <span class="keyword">import</span> CarInfrared</span><br><span class="line"><span class="keyword">from</span> camera <span class="keyword">import</span> CarCamera</span><br><span class="line"><span class="keyword">from</span> detect <span class="keyword">import</span> CarDetect</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">GPIO.setwarnings(<span class="literal">False</span>)  <span class="comment"># Disable warning</span></span><br><span class="line">GPIO.setmode(GPIO.BCM)  <span class="comment"># BCM coding</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span>(<span class="params">CarMove, CarUltrasound, CarInfrared, CarCamera, CarDetect</span>):</span>  <span class="comment"># create class Car, which derives all the modules</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        CarMove.__init__(self)</span><br><span class="line">        CarUltrasound.__init__(self)</span><br><span class="line">        CarInfrared.__init__(self)</span><br><span class="line">        CarCamera.__init__(self)</span><br><span class="line">        CarDetect.__init__(self)</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">AllStop</span>(<span class="params">self</span>):</span></span><br><span class="line">        CarMove.MotorStop(self)</span><br><span class="line">        CarCamera.CameraCleanup(self)</span><br><span class="line">        GPIO.cleanup()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        car = Car() </span><br><span class="line"></span><br><span class="line">        fourcc = cv2.VideoWriter_fourcc(*<span class="string">&#x27;XVID&#x27;</span>)</span><br><span class="line">        video_out = cv2.VideoWriter(<span class="string">&#x27;out.mp4&#x27;</span>, fourcc, <span class="number">0.8</span>, (<span class="number">640</span>, <span class="number">480</span>))</span><br><span class="line"></span><br><span class="line">        <span class="comment">##### Prepare for the tensorflow object detection API  #####</span></span><br><span class="line">        MODEL_NAME = <span class="string">&#x27;ssdlite_mobilenet_v2_coco_2018_05_09&#x27;</span>  <span class="comment"># 使用的模型</span></span><br><span class="line">        PATH_TO_CKPT = MODEL_NAME + <span class="string">&#x27;/frozen_inference_graph.pb&#x27;</span>   </span><br><span class="line">        PATH_TO_LABELS = os.path.join(<span class="string">&#x27;data&#x27;</span>, <span class="string">&#x27;mscoco_label_map.pbtxt&#x27;</span>) </span><br><span class="line">        NUM_CLASSES = <span class="number">90</span> </span><br><span class="line">        fileAlreadyExists = os.path.isfile(PATH_TO_CKPT) </span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> fileAlreadyExists:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;Model does not exsist !&#x27;</span>)</span><br><span class="line">            exit</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Loading...&#x27;</span>)   <span class="comment"># Loading the model</span></span><br><span class="line">        detection_graph = tf.Graph() </span><br><span class="line">        <span class="keyword">with</span> detection_graph.as_default(): </span><br><span class="line">            od_graph_def = tf.GraphDef() </span><br><span class="line">            <span class="keyword">with</span> tf.gfile.GFile(PATH_TO_CKPT, <span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> fid: </span><br><span class="line">                serialized_graph = fid.read() </span><br><span class="line">                od_graph_def.ParseFromString(serialized_graph) </span><br><span class="line">                tf.import_graph_def(od_graph_def, name=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        label_map = label_map_util.load_labelmap(PATH_TO_LABELS) </span><br><span class="line">        categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=<span class="literal">True</span>) </span><br><span class="line">        category_index = label_map_util.create_category_index(categories)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Finish Load Graph&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        image_tensor = detection_graph.get_tensor_by_name(<span class="string">&#x27;image_tensor:0&#x27;</span>) </span><br><span class="line">        detection_boxes = detection_graph.get_tensor_by_name(<span class="string">&#x27;detection_boxes:0&#x27;</span>) </span><br><span class="line">        detection_scores = detection_graph.get_tensor_by_name(<span class="string">&#x27;detection_scores:0&#x27;</span>) </span><br><span class="line">        detection_classes = detection_graph.get_tensor_by_name(<span class="string">&#x27;detection_classes:0&#x27;</span>) </span><br><span class="line">        num_detections = detection_graph.get_tensor_by_name(<span class="string">&#x27;num_detections:0&#x27;</span>)</span><br><span class="line">        <span class="comment">##### Finish the Preparation for the tensorflow object detection API  #####</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">##### Use the Detection Graph #####</span></span><br><span class="line">        <span class="keyword">with</span> detection_graph.as_default():</span><br><span class="line">            <span class="keyword">with</span> tf.Session(graph=detection_graph) <span class="keyword">as</span> sess:</span><br><span class="line">                camera, rawCapture = car.CameraInit()  <span class="comment"># Initialize the PiCamera</span></span><br><span class="line">                <span class="comment"># PiCamera 视频流：</span></span><br><span class="line">                <span class="keyword">for</span> raw_frame <span class="keyword">in</span> camera.capture_continuous(rawCapture, <span class="built_in">format</span>=<span class="string">&quot;bgr&quot;</span>,use_video_port=<span class="literal">True</span>):</span><br><span class="line">                    t_start = time.time()  <span class="comment"># 用来计算FPS</span></span><br><span class="line"></span><br><span class="line">                    frame = np.copy(raw_frame.array)</span><br><span class="line">                    frame.setflags(write=<span class="number">1</span>)</span><br><span class="line">                    image_np_expanded = np.expand_dims(frame, axis=<span class="number">0</span>) </span><br><span class="line">                    </span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">&#x27;Running detection..&#x27;</span>) </span><br><span class="line">                    (boxes, scores, classes, num) = sess.run( </span><br><span class="line">                        [detection_boxes, detection_scores, detection_classes, num_detections], </span><br><span class="line">                        feed_dict=&#123;image_tensor: image_np_expanded&#125;)   <span class="comment"># 使用API来Detect</span></span><br><span class="line">                    </span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">&#x27;Done.  Visualizing..&#x27;</span>) </span><br><span class="line">                    vis_utils.visualize_boxes_and_labels_on_image_array(</span><br><span class="line">                            frame,</span><br><span class="line">                            np.squeeze(boxes),</span><br><span class="line">                            np.squeeze(classes).astype(np.int32),</span><br><span class="line">                            np.squeeze(scores),</span><br><span class="line">                            category_index,</span><br><span class="line">                            use_normalized_coordinates=<span class="literal">True</span>,</span><br><span class="line">                            line_thickness=<span class="number">8</span>)   <span class="comment"># 在frame上画框（检测结果）</span></span><br><span class="line"></span><br><span class="line">                    car.VideoTransmission(frame)  <span class="comment"># 向PC传输视频帧</span></span><br><span class="line">                    video_out.write(frame)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                    rawCapture.truncate(<span class="number">0</span>)  <span class="comment"># PiCamera必备</span></span><br><span class="line"></span><br><span class="line">                    mfps = <span class="number">1</span> / (time.time() - t_start)  <span class="comment"># 计算FPS</span></span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">&#x27;FPS: &#x27;</span>, mfps)</span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> KeyboardInterrupt:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Measurement stopped by User&quot;</span>)</span><br><span class="line">        car.AllStop()</span><br><span class="line">        video_out.release()</span><br><span class="line">© <span class="number">2021</span> GitHub, Inc.</span><br><span class="line">Terms</span><br><span class="line">Privacy</span><br><span class="line">Security</span><br><span class="line">Status</span><br><span class="line">Docs</span><br><span class="line">Contact GitHub</span><br><span class="line">Pricing</span><br><span class="line">API</span><br><span class="line">Training</span><br><span class="line">Blog</span><br><span class="line">About</span><br><span class="line">Loading complete</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-在这里给出csdn大佬给出的picamera教程链接"><a href="#4-在这里给出csdn大佬给出的picamera教程链接" class="headerlink" title="4,在这里给出csdn大佬给出的picamera教程链接"></a>4,在这里给出csdn大佬给出的picamera教程链接</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/talkxin/article/details/50504601?utm_source=app&app_version=4.10.0&code=app_1562916241&uLinkId=usr1mkqgl919blen">点这里</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/09/20/%E9%A1%B9%E7%9B%AE%E5%87%86%E5%A4%87%E6%8A%A5%E5%91%8A-md/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="_posts-opencv基本操作-md" class="article article-type-_posts  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/09/16/opencv%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C-md/">opencv基本操作(1).md</a>
+    </h1>
+  
+
+        
+        <a href="/2021/09/16/opencv%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C-md/" class="archive-article-date">
+  	<time datetime="2021-09-16T15:08:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本贴记录，总结opencv，的使用与安装。也给来的朋友做一个参考作用</p>
+</blockquote>
+<h1 id="1-先安装opencv和相应版本的opencv-contrib-python"><a href="#1-先安装opencv和相应版本的opencv-contrib-python" class="headerlink" title="1.先安装opencv和相应版本的opencv-contrib-python"></a>1.先安装opencv和相应版本的opencv-contrib-python</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install opencv-python</span><br><span class="line">pip install opencv-contrib-python==&#x27;版本号&#x27;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-开始教程"><a href="#2-开始教程" class="headerlink" title="2.开始教程"></a>2.开始教程</h1><h2 id="1-图片和视频的读取和显示保存"><a href="#1-图片和视频的读取和显示保存" class="headerlink" title="1.图片和视频的读取和显示保存"></a>1.图片和视频的读取和显示保存</h2><h3 id="1-使用opencv读取相应的图片"><a href="#1-使用opencv读取相应的图片" class="headerlink" title="1.使用opencv读取相应的图片"></a>1.使用opencv读取相应的图片</h3><p>代码:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlibtu.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&quot;F:/images/1.jpg&quot;</span>)</span><br><span class="line"><span class="comment"># 读取的img为一个numpy数组</span></span><br></pre></td></tr></table></figure>
+
+<p>相应的可以使用 <code>img.shape</code> 来查看数组的形状,也可以使用</p>
+<p>图片的显示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># &#x27;result&#x27;参数表示窗口的名称</span></span><br><span class="line">cv2.imshow(<span class="string">&#x27;result&#x27;</span>,img)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+
+<p><strong>此时的waitkey中的参数可以为0，或者其他，为0时表示按任意键退出，而填写其他数时表示图片窗口的持续时间</strong></p>
+<p>可以将编写一个显示函数进行替代：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cv_show</span>(<span class="params">name,img</span>):</span></span><br><span class="line">    cv2.show(name,img)</span><br><span class="line">    cv2.waitKey(<span class="number">0</span>)</span><br><span class="line">    cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-读取相应的灰度图"><a href="#2-读取相应的灰度图" class="headerlink" title="2.读取相应的灰度图"></a>2.读取相应的灰度图</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img = cv2.imread(<span class="string">&#x27;F:/images/1.jpg&#x27;</span>,cv2.IMGREAD_GRAYSCALE)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-图片的保存"><a href="#3-图片的保存" class="headerlink" title="3. 图片的保存"></a>3. 图片的保存</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cv2.imwrite(<span class="string">&#x27;F:/images/save_picture.jpg&#x27;</span>,img)</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-视频的读取"><a href="#4-视频的读取" class="headerlink" title="4.视频的读取"></a>4.视频的读取</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">vc = Cv2.videoCapture(<span class="string">&#x27;F:/images/2.mp4&#x27;</span>)</span><br><span class="line"><span class="keyword">if</span> vc.isOpened():</span><br><span class="line">    <span class="built_in">open</span>, frame = vc.read()</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">open</span> = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="built_in">open</span>:</span><br><span class="line">    ret, frame = vc.read()</span><br><span class="line">    <span class="keyword">if</span> frame <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> ret == <span class="literal">True</span>:</span><br><span class="line">        <span class="comment"># 将每一帧的图像都转化为灰度图</span></span><br><span class="line">        gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)</span><br><span class="line">        cv2.imshow(<span class="string">&#x27;result&#x27;</span>,frame)</span><br><span class="line">        <span class="keyword">if</span> cv2.waitKey(<span class="number">10</span>) &amp; <span class="number">0xFF</span> == <span class="number">27</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">cv2.release()</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-图片的处理"><a href="#2-图片的处理" class="headerlink" title="2.图片的处理"></a>2.图片的处理</h2><h3 id="1-截取图片的指定位置"><a href="#1-截取图片的指定位置" class="headerlink" title="1.截取图片的指定位置"></a>1.截取图片的指定位置</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">img = cv2.imread(<span class="string">&#x27;F:/images/1.jpg&#x27;</span>)</span><br><span class="line">car = img[:<span class="number">200</span>,:<span class="number">200</span>]</span><br><span class="line">cv_show(<span class="string">&#x27;result&#x27;</span>,car)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-对图片色道的拆分与合并"><a href="#2-对图片色道的拆分与合并" class="headerlink" title="2.对图片色道的拆分与合并"></a>2.对图片色道的拆分与合并</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">b, g, r = cv2.split(img)</span><br><span class="line">img = cv2.merge((b, g, r))</span><br><span class="line"><span class="comment"># 也可以这样操作</span></span><br><span class="line">b = img[:,:,<span class="number">0</span>]</span><br><span class="line">g = img[:,:,<span class="number">1</span>]</span><br><span class="line">r = img[:,:,<span class="number">2</span>]</span><br><span class="line"><span class="comment"># 将三种通道单独显示</span></span><br><span class="line">cur_img = img.copy()</span><br><span class="line">cur_img_b[:,:,<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">cur_img_b[:,:,<span class="number">2</span>] = <span class="number">0</span></span><br><span class="line">plt.subplot(<span class="number">231</span>), plt.imshow(cur_img_b)</span><br><span class="line"></span><br><span class="line">cur_img_g[:,:,<span class="number">0</span>] = <span class="number">0</span></span><br><span class="line">cur_img_g[:,:,<span class="number">2</span>] = <span class="number">0</span></span><br><span class="line">plt.subplot(<span class="number">232</span>), plt.imshow(cur_img_g)</span><br><span class="line">cur_img_r[:,:,<span class="number">0</span>] = <span class="number">0</span></span><br><span class="line">cur_img_r[:,:,<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">plt.subplot(<span class="number">233</span>), plt.imshow(cur_img_r)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-边界填充"><a href="#3-边界填充" class="headerlink" title="3.边界填充"></a>3.边界填充</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置四周的填充大小</span></span><br><span class="line">top_size, bottom_size, left_size, right_size = (<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line">replicate = cv2.copyMakeBorder(img, top_size, bottom_size, left_size, right_size, cv2.BORDER_REPLICATE)</span><br><span class="line">reflect = cv2.copyMakeBorder(img, top_size, bottom_size, left_size, right_size, cv2.BORDER_REFLECT)</span><br><span class="line">reflect101 = cv2.copyMakeBorder(img, top_size, bottom_size, left_size, right_size, cv2.BORDER_REFLECT_101)</span><br><span class="line">wrap = cv2.copyMakeBoder(img,top_size, bottom_size, left_size, right_size, cv2.BORDER_WRAP)</span><br><span class="line">constant = cv2.copyMakeBoder(img, top_size, bottom_size, left_size, right_size, BORDER_CONSTANT,value = <span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>relicate：对边界进行复制填充</p>
+</li>
+<li><p>reflect：对图片的两边的像素进行反射</p>
+</li>
+<li><p>refect101：以边缘为轴进行反射</p>
+</li>
+<li><p>wrap：对四周进行重复填充</p>
+</li>
+<li><p>constant：对照片进行常数填充</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">将几种填充显示出来</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.subplot(<span class="number">231</span>), plt.imshow(img),plt.title(<span class="string">&#x27;original&#x27;</span>)</span><br><span class="line">plt.subplot(<span class="number">232</span>), plt.imshow(replicate),plt.title(<span class="string">&#x27;replicate&#x27;</span>)</span><br><span class="line">plt.subplot(<span class="number">233</span>), plt.imshow(reflect),plt.title(<span class="string">&#x27;reflect&#x27;</span>)</span><br><span class="line">plt.subplot(<span class="number">234</span>), plt.imshow(reflect101), plt.title(<span class="string">&#x27;reflect101&#x27;</span>)</span><br><span class="line">plt.subplot(<span class="number">235</span>), plt.imshow(wrap), plt.title(<span class="string">&#x27;wrap&#x27;</span>)</span><br><span class="line">plt.subplot(<span class="number">236</span>), plt.imshow(constant), plt.title(<span class="string">&#x27;constant&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/09/16/opencv%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C-md/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="_post-使用GitHub和hexo搭建个人blog教程-md" class="article article-type-_post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
