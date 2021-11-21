@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>lxml库的基本使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="python lxml库的基本使用1. lxml库的安装 使用win+r 输入cmd打开控制台  安装：    使用conda安装，  1conda install lxml   使用pip1pip install lxml  2.lxml库的基本使用lxml库的导入12import lxmlfrom lxml import etree  1.Element类Element类为XML处理的核心，E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="lxml库的基本使用">
+<meta property="og:url" content="http://example.com/2021/11/01/lxml%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="python lxml库的基本使用1. lxml库的安装 使用win+r 输入cmd打开控制台  安装：    使用conda安装，  1conda install lxml   使用pip1pip install lxml  2.lxml库的基本使用lxml库的导入12import lxmlfrom lxml import etree  1.Element类Element类为XML处理的核心，E">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.w3school.com.cn/i/ct_nodetree1.gif">
+<meta property="article:published_time" content="2021-11-01T10:46:03.000Z">
+<meta property="article:modified_time" content="2021-11-09T13:58:24.649Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.w3school.com.cn/i/ct_nodetree1.gif">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,232 +156,481 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-lxml库的基本使用" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/21/yolov3%E7%AE%97%E6%B3%95%E7%90%86%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2021-11-21T06:45:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/21/yolov3%E7%AE%97%E6%B3%95%E7%90%86%E8%A7%A3/">yolov3算法理解</a>
+    <h1 class="article-title" itemprop="name">
+      lxml库的基本使用
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/01/lxml%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+        
+        <a href="/2021/11/01/lxml%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2021-11-01T10:46:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/01/lxml%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">lxml库的基本使用</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="python-lxml库的基本使用"><a href="#python-lxml库的基本使用" class="headerlink" title="python lxml库的基本使用"></a>python lxml库的基本使用</h2><h2 id="1-lxml库的安装"><a href="#1-lxml库的安装" class="headerlink" title="1. lxml库的安装"></a>1. lxml库的安装</h2><ol>
+<li><p>使用win+r 输入cmd打开控制台</p>
+</li>
+<li><p>安装：</p>
+</li>
+</ol>
+<ul>
+<li>使用conda安装，</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install lxml</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<ul>
+<li>使用pip<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install lxml</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="2-lxml库的基本使用"><a href="#2-lxml库的基本使用" class="headerlink" title="2.lxml库的基本使用"></a>2.lxml库的基本使用</h2><h3 id="lxml库的导入"><a href="#lxml库的导入" class="headerlink" title="lxml库的导入"></a>lxml库的导入</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> lxml</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br></pre></td></tr></table></figure>
 
+<h3 id="1-Element类"><a href="#1-Element类" class="headerlink" title="1.Element类"></a>1.Element类</h3><p>Element类为XML处理的核心，Element对象可以直观的理解为XML的节点，基础的处理方式都是围绕着Element类来进行的，Element类的基本操作方式主要有三种：</p>
+<ol>
+<li><p>节点的操作</p>
+</li>
+<li><p>节点属性的操作</p>
+</li>
+<li><p>节点文本的操作</p>
+</li>
+</ol>
+<h4 id="1-节点的操作"><a href="#1-节点的操作" class="headerlink" title="1.节点的操作"></a>1.节点的操作</h4><ul>
+<li>节点的创建</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root = etree.Element(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(root)</span><br><span class="line"><span class="comment"># tostring为查看节点的内容</span></span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;Element root at <span class="number">0x2aafbc6fe88</span>&gt;</span><br><span class="line">b<span class="string">&#x27;&lt;root/&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>节点属性查看<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用tag方法来查看节点的具体属性</span></span><br><span class="line"><span class="built_in">print</span>(root.tag)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>节点内容的输出<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root/&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>子节点的添加<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root_child1 = etree.SubElement(root,<span class="string">&#x27;sub1&#x27;</span>)</span><br><span class="line">root_child2 = etree.SubElement(root,<span class="string">&#x27;sub2&#x27;</span>)</span><br><span class="line">root_child3 = etree.SubElement(root,<span class="string">&#x27;sub3&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;root&gt;&lt;sub1/&gt;&lt;sub2/&gt;&lt;sub3/&gt;&lt;/root&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>子节点的删除</li>
+</ul>
+<p><strong>注：remove方法只会清除该节点的子节点，不会清除节点本身，且当子节点重名时，会选择一起进行清楚，clear方法则会一次性清除所有子节点</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root.remove(root_child1)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br><span class="line">root.clear()</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root&gt;&lt;sub2/&gt;&lt;sub3/&gt;&lt;/root&gt;&#x27;</span></span><br><span class="line">b<span class="string">&#x27;&lt;root/&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>节点的简便操作：<br>可以使用列表方式来操作子节点(按照节点的先后来进行标号)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">root = etree.Element(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">root_child1 = etree.SubElement(root,<span class="string">&#x27;sub1&#x27;</span>)</span><br><span class="line">root_child2 = etree.subElement(root,<span class="string">&#x27;sub2&#x27;</span>)</span><br><span class="line">root_child3 = etree.SubElement(root,<span class="string">&#x27;sub3&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br><span class="line"><span class="keyword">for</span> child <span class="keyword">in</span> root:</span><br><span class="line">    <span class="built_in">print</span>(child.tag)</span><br><span class="line"><span class="built_in">print</span>(root[<span class="number">0</span>].tag)</span><br><span class="line"><span class="built_in">print</span>(root.index(root_child2))</span><br><span class="line"><span class="built_in">print</span>(root.pop(<span class="number">0</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">len</span>(root))</span><br><span class="line">root.insert(<span class="number">0</span>,etree.Element(<span class="string">&#x27;insert_Element&#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(root[:])</span><br><span class="line">root.append(etree.Element(<span class="string">&#x27;append_Element&#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root&gt;&lt;sub1/&gt;&lt;sub2/&gt;&lt;sub3/&gt;&lt;/root&gt;&#x27;</span></span><br><span class="line">sub1</span><br><span class="line">sub2</span><br><span class="line">sub3</span><br><span class="line">sub1</span><br><span class="line"><span class="number">1</span></span><br><span class="line">sub1</span><br><span class="line"><span class="number">2</span></span><br><span class="line">b<span class="string">&#x27;&lt;root&gt;&lt;insert_Element/&gt;&lt;sub2/&gt;&lt;sub3/&gt;&lt;/root&gt;&#x27;</span></span><br><span class="line">b<span class="string">&#x27;&lt;root&gt;&lt;insert_Element/&gt;&lt;sub2/&gt;&lt;sub3/&gt;&lt;append_Element/&gt;&lt;/root&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取节点的父节点<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(root[<span class="number">1</span>].getparent().tag)</span><br></pre></td></tr></table></figure>
+输出：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root</span><br></pre></td></tr></table></figure>
+
+<h4 id="2节点的属性操作"><a href="#2节点的属性操作" class="headerlink" title="2节点的属性操作"></a>2节点的属性操作</h4><ul>
+<li>创建属性</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在创建节点的同时使用interesting创建节点的属性</span></span><br><span class="line">root = etree.Elenment(<span class="string">&#x27;root&#x27;</span>,classic= <span class="string">&#x27;person&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br><span class="line"><span class="built_in">print</span>(root)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root classic=&quot;person&quot;/&gt;&#x27;</span></span><br><span class="line">&lt;Element root at <span class="number">0x2aafbccb708</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用set方法来给Element对象设置属性，第一个参数为属性名，第二个为属性</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root.<span class="built_in">set</span>(<span class="string">&#x27;color&#x27;</span>,<span class="string">&#x27;white&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root classic=&quot;person&quot; color = &quot;white&quot;/&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取属性</li>
+</ul>
+<p><strong>在Element实例对象中，属性以键值对形式组成，可以用字典的方式来操作</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(root.get(<span class="string">&#x27;classic&#x27;</span>,<span class="literal">None</span>))</span><br><span class="line"><span class="built_in">print</span>(root.values())</span><br><span class="line"><span class="built_in">print</span>(root.keys())</span><br><span class="line"><span class="built_in">print</span>(root.items())</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">person</span><br><span class="line">[<span class="string">&quot;person&quot;</span>,<span class="string">&quot;white&quot;</span>]</span><br><span class="line">[<span class="string">&quot;classic&quot;</span>,<span class="string">&quot;color&quot;</span>]</span><br><span class="line">[(<span class="string">&quot;classic&quot;</span>,<span class="string">&quot;person&quot;</span>),(<span class="string">&quot;color&quot;</span>,<span class="string">&quot;white&quot;</span>)]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用attrib属性</li>
+</ul>
+<p><strong>可以使用attrib属性一次性取出所有的属性来操作，返回一个字典，注：修改字典中的内容节点的属性也会随之修改</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">attribute = root.attrib</span><br><span class="line"><span class="built_in">print</span>(attribute)</span><br><span class="line"></span><br><span class="line">attribute[<span class="string">&quot;test&quot;</span>] = <span class="string">&quot;one&quot;</span></span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;classic&quot;</span>:<span class="string">&quot;person&quot;</span>,<span class="string">&quot;color&quot;</span>:<span class="string">&quot;white&quot;</span>&#125;</span><br><span class="line">&#123;<span class="string">&quot;classic&quot;</span>:<span class="string">&quot;person&quot;</span>,<span class="string">&quot;color&quot;</span>:<span class="string">&quot;white&quot;</span>,<span class="string">&quot;test&quot;</span>:<span class="string">&quot;one&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-节点的文本操作"><a href="#3-节点的文本操作" class="headerlink" title="3.节点的文本操作"></a>3.节点的文本操作</h4><ul>
+<li>使用text或者tail获取节点中的文本内容<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">root = etree.Element(<span class="string">&#x27;root&#x27;</span>,classic = <span class="string">&quot;person&quot;</span>)</span><br><span class="line">root.text = <span class="string">&quot;i am a boy&quot;</span></span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br><span class="line"><span class="comment"># 在XML中标签一般成对出现</span></span><br><span class="line"><span class="built_in">print</span>(root.text)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root classic=&quot;person&quot;&gt;i am a boy&lt;/root&gt;&#x27;</span></span><br><span class="line">i am a boy</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>tail方法为在标签的后面添加文本,且在tostring方法中可以添加method参数来过滤标签，生成文本<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root.tail = <span class="string">&quot;i am the tail&quot;</span></span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root),method = <span class="string">&#x27;text&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root classic=&quot;person&quot;&gt;i am a boy&lt;/root&gt;i am the tail&#x27;</span></span><br><span class="line">i am a boyi am the tal</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-xpath-最后给出xpath基础语法和完整教程链接"><a href="#4-xpath-最后给出xpath基础语法和完整教程链接" class="headerlink" title="4.xpath(最后给出xpath基础语法和完整教程链接)"></a>4.xpath(最后给出xpath基础语法和完整教程链接)</h4><p><strong>在Element类中可以使用xpath来获取参数及其内容</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 过滤标签，返回文本</span></span><br><span class="line"><span class="built_in">print</span>(root.xpath(<span class="string">&quot;string()&quot;</span>))</span><br><span class="line"><span class="comment"># 以标签作为分隔，返回一个列表,文本会带有标签的所有属性信息</span></span><br><span class="line"><span class="built_in">print</span>(root.xpath(<span class="string">&quot;//text()&quot;</span>))</span><br><span class="line">text = root.xpath(<span class="string">&quot;//text()&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(text[<span class="number">0</span>],text[<span class="number">0</span>].tag)</span><br><span class="line"><span class="built_in">print</span>(text[<span class="number">0</span>].is_text)</span><br><span class="line"><span class="built_in">print</span>(text[<span class="number">0</span>].is_tail)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">i am a boyi am the tail</span><br><span class="line">[<span class="string">&#x27;i am a boy&#x27;</span>,<span class="string">&#x27;i am the tail&#x27;</span>]</span><br><span class="line">root</span><br><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-文本的解析和输出"><a href="#2-文本的解析和输出" class="headerlink" title="2.文本的解析和输出"></a>2.文本的解析和输出</h3><h4 id="文本的解析"><a href="#文本的解析" class="headerlink" title="文本的解析"></a>文本的解析</h4><blockquote>
+<p>文本的解析主要分为3中：</p>
+<ol>
+<li>fromstring</li>
+<li>XML方法</li>
+<li>HTML方法，此方法会自动补全标签</li>
+</ol>
+</blockquote>
+<ul>
+<li>fromstring方法<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">data = <span class="string">&#x27;&lt;root&gt;data&lt;root&gt;&#x27;</span></span><br><span class="line">root = etree.fromstring(data)</span><br><span class="line"><span class="built_in">print</span>(root.tag)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root</span><br><span class="line">b<span class="string">&#x27;&lt;root&gt;data&lt;/root&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>XML方法<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root = etree.XML(data)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root&gt;data&lt;/root&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>HTML方法<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root = etree.HTML(data)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;html&gt;&lt;body&gt;&lt;root&gt;data&lt;/root&gt;&lt;/body&gt;&lt;/html&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文本的输出"><a href="#文本的输出" class="headerlink" title="文本的输出"></a>文本的输出</h4><ul>
+<li>主要为tostring函数<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root = etree.XML(<span class="string">&#x27;&lt;root&gt;&lt;a&gt;info&lt;/a&gt;&lt;/root&gt;&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root))</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root),xml_declaratin=<span class="literal">True</span>)</span><br><span class="line"><span class="built_in">print</span>(etree.tostring(root),endcoding=<span class="string">&#x27;utf-8&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">b<span class="string">&#x27;&lt;root&gt;&lt;a&gt;info&lt;/a&gt;&lt;/root&gt;&#x27;</span></span><br><span class="line">b<span class="string">&quot;&lt;?xml version=&#x27;1.0&#x27; encoding=&#x27;ASCII&#x27;?&gt;\n&lt;root&gt;&lt;a&gt;info&lt;/a&gt;&lt;/root&gt;&quot;</span></span><br><span class="line">b<span class="string">&#x27;&lt;root&gt;&lt;a&gt;info&lt;/a&gt;&lt;/root&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-ElementTree对象-最常用的"><a href="#3-ElementTree对象-最常用的" class="headerlink" title="3.ElementTree对象(最常用的)"></a>3.ElementTree对象(最常用的)</h3><p>ElementTree对象可以理解为由Element对象组成的一颗树，而ElementPath则用于定位每个Element节点的位置</p>
+<p><img src="https://www.w3school.com.cn/i/ct_nodetree1.gif"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xml.etree.ElementTree <span class="keyword">as</span> ET</span><br><span class="line"></span><br><span class="line">path = <span class="string">&quot;test.xml&quot;</span></span><br><span class="line"><span class="comment"># 使用ET.parse方法来读取xml文件，并生成一个ET对象</span></span><br><span class="line">tree = ET.parse(path)</span><br><span class="line"><span class="comment"># getroot获取ElementTree的根结点</span></span><br><span class="line">root = tree.getroot()</span><br><span class="line"><span class="comment"># findall，find方法查找节点，不完全支持xpath语法em。。自行体会</span></span><br><span class="line"><span class="comment"># 若想完全支持，则使用lxml下的etree即可</span></span><br><span class="line">find_node = root.findall(<span class="string">&#x27;.//c&#x27;</span>)<span class="comment"># 查找根节点下的所有c节点</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：lxml.etree中的Element类和xml.etree.ElementTree.Element不一样</strong></p>
+<p>不要通用。</p>
+<h3 id="XPATH"><a href="#XPATH" class="headerlink" title="XPATH"></a>XPATH</h3><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/xpath/xpath_syntax.asp">教程地址</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">nodename</td>
+<td align="left">选取此节点的所有子节点。</td>
+</tr>
+<tr>
+<td align="left">/</td>
+<td align="left">从根节点选取。</td>
+</tr>
+<tr>
+<td align="left">//</td>
+<td align="left">从匹配选择的当前节点选择文档中的节点，而不考虑它们的位置。</td>
+</tr>
+<tr>
+<td align="left">.</td>
+<td align="left">选取当前节点。</td>
+</tr>
+<tr>
+<td align="left">..</td>
+<td align="left">选取当前节点的父节点。</td>
+</tr>
+<tr>
+<td align="left">@</td>
+<td align="left">选取属性。</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">路径表达式</th>
+<th align="left">结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">bookstore</td>
+<td align="left">选取 bookstore 元素的所有子节点。</td>
+</tr>
+<tr>
+<td align="left">/bookstore</td>
+<td align="left">选取根元素 bookstore。注释：假如路径起始于正斜杠( / )，则此路径始终代表到某元素的绝对路径！</td>
+</tr>
+<tr>
+<td align="left">bookstore/book</td>
+<td align="left">选取属于 bookstore 的子元素的所有 book 元素。</td>
+</tr>
+<tr>
+<td align="left">//book</td>
+<td align="left">选取所有 book 子元素，而不管它们在文档中的位置。</td>
+</tr>
+<tr>
+<td align="left">bookstore//book</td>
+<td align="left">选择属于 bookstore 元素的后代的所有 book 元素，而不管它们位于 bookstore 之下的什么位置。</td>
+</tr>
+<tr>
+<td align="left">//@lang</td>
+<td align="left">选取名为 lang 的所有属性。</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>/bookstore/book[1]</th>
+<th>选取属于 bookstore 子元素的第一个 book 元素。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/bookstore/book[last()]</td>
+<td>选取属于 bookstore 子元素的最后一个 book 元素。</td>
+</tr>
+<tr>
+<td>/bookstore/book[last()-1]</td>
+<td>选取属于 bookstore 子元素的倒数第二个 book 元素。</td>
+</tr>
+<tr>
+<td>/bookstore/book[position()&lt;3]</td>
+<td>选取最前面的两个属于 bookstore 元素的子元素的 book 元素。</td>
+</tr>
+<tr>
+<td>//title[@lang]</td>
+<td>选取所有拥有名为 lang 的属性的 title 元素。</td>
+</tr>
+<tr>
+<td>//title[@lang=’eng’]</td>
+<td>选取所有 title 元素，且这些元素拥有值为 eng 的 lang 属性。</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]</td>
+<td>选取 bookstore 元素的所有 book 元素，且其中的 price 元素的值须大于 35.00。</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]/title</td>
+<td>选取 bookstore 元素中的 book 元素的所有 title 元素，且其中的 price 元素的值须大于 35.00。</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">通配符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">*</td>
+<td align="left">匹配任何元素节点。</td>
+</tr>
+<tr>
+<td align="left">@*</td>
+<td align="left">匹配任何属性节点。</td>
+</tr>
+<tr>
+<td align="left">node()</td>
+<td align="left">匹配任何类型的节点。</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>//book/title | //book/price</th>
+<th>选取 book 元素的所有 title 和 price 元素。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>//title | //price</td>
+<td>选取文档中的所有 title 和 price 元素。</td>
+</tr>
+<tr>
+<td>/bookstore/book/title | //price</td>
+<td>选取属于 bookstore 元素的 book 元素的所有 title 元素，以及文档中所有的 price 元素。</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/11/01/lxml%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/24/kali-recon-ng%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="archive-article-date">
-  	<time datetime="2021-09-24T12:24:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-24</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2021/11/21/yolov3%E7%AE%97%E6%B3%95%E7%90%86%E8%A7%A3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          yolov3算法理解
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/09/24/kali-recon-ng%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">kali.recon-ng安装模块失败问题解决</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/24/kali-recon-ng%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">kali.recon-ng安装模块失败问题解决</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/24/%E7%99%BE%E5%BA%A6fz5c%E5%BC%80%E5%8F%91%E6%9D%BF%E6%96%B9%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2021-09-24T10:32:19.682Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-24</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/20/%E9%A1%B9%E7%9B%AE%E5%87%86%E5%A4%87%E6%8A%A5%E5%91%8A-md/" class="archive-article-date">
-  	<time datetime="2021-09-20T08:43:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/20/%E9%A1%B9%E7%9B%AE%E5%87%86%E5%A4%87%E6%8A%A5%E5%91%8A-md/">项目准备报告.md</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'true'; // required: replace example with your forum shortname
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-_posts">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/16/opencv%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C-md/" class="archive-article-date">
-  	<time datetime="2021-09-16T15:08:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/16/opencv%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C-md/">opencv基本操作(1).md</a>
-    </h1>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-_post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/16/%E4%BD%BF%E7%94%A8GitHub%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAblog%E6%95%99%E7%A8%8B-md/" class="archive-article-date">
-  	<time datetime="2021-09-16T08:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/16/%E4%BD%BF%E7%94%A8GitHub%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAblog%E6%95%99%E7%A8%8B-md/">使用GitHub和hexo搭建个人blog教程.md</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/15/hello-world/" class="archive-article-date">
-  	<time datetime="2021-09-15T12:11:05.874Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -398,8 +653,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
